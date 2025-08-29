@@ -4,18 +4,18 @@ const incrementButton = document.querySelector("#increment button:nth-child(2)")
 const decrementButton = document.querySelector("#increment button:nth-child(1)");
 const resetButton = document.getElementById("reset-btn");
 const inputField = document.getElementById("myInput");
-let plus=parseInt(inputField.value)
-let minus=parseInt(inputField.value)
+let plusBtn=parseInt(inputField.value)
+let minusBtn=parseInt(inputField.value)
 incrementButton.addEventListener("click", () => {
   const countValue =parseInt(countDisplay.innerText)
-  countDisplay.innerText=countValue + plus
+  countDisplay.innerText=countValue + plusBtn
   console.log('Plus Operator');
   
 });
 
 decrementButton.addEventListener("click", () => {
 const countValue=parseInt(countDisplay.innerText)
-  countDisplay.innerText = countValue-minus
+  countDisplay.innerText = countValue-minusBtn
   console.log('Minus Operator');
 });
 
