@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>counter-app</title>
-</head>
-<body>
-      
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter-app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="counter-app">
+        <h2 id="number-counter">0</h2>
+        <div id="increment">
+          <button>-</button>
+          <button>+</button>
+        </div>
+        <p id="input-feild">
+          Increment/Decrement by: <input type="number" value="1" id="myInput" >
+
+        </p>
+        <button id="reset-btn" type="reset">Reset</button>
+        <p id="details">
+          Keyboard shortcuts: + to increment , - to decrement, Page Up/Down to
+          change step value
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
